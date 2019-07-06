@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.javasampleapproach.angular4mongodb.model.Customer;
 import com.javasampleapproach.angular4mongodb.repo.CustomerMongoRepository;
 
-@CrossOrigin(origins = "http://localhost:4200")
+//@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/api")
 public class CustomerController {
