@@ -10,6 +10,9 @@ import org.springframework.context.annotation.Configuration;
 @EnableAutoConfiguration
 public class SpringBootAngular4MongoDbApplication {
 
+	
+	//sysout
+	
 	public static void main(String[] args) {
 		SpringApplication.run(SpringBootAngular4MongoDbApplication.class, args);
 	}
