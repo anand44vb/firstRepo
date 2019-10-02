@@ -1,5 +1,6 @@
 package com.javasampleapproach.angular4mongodb.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.validation.Valid;
@@ -22,7 +23,7 @@ import com.javasampleapproach.angular4mongodb.repo.CustomerMongoRepository;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/apis")
 public class CustomerController {
 
 	@Autowired
@@ -63,7 +64,9 @@ public class CustomerController {
 		System.out.println("Delete Customer with ID = " + id + "...");
 
 		customerRepository.delete(id);
+		List<String> list = new ArrayList<>();
 		
+		list.stream().findAny();
 		return new ResponseEntity<>("Customer has been deleted!", HttpStatus.OK);
 	}
 	
