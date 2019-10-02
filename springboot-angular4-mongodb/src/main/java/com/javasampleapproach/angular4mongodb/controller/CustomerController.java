@@ -22,7 +22,7 @@ import com.javasampleapproach.angular4mongodb.repo.CustomerMongoRepository;
 
 @CrossOrigin(origins = "http://localhost:4200")
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/apis")
 public class CustomerController {
 
 	@Autowired
